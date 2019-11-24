@@ -9,7 +9,8 @@
     "test": "NODE_ENV=testing jest --forceExit --detectOpenHandles  --silent",
     "dev": "nodemon --exec yarn restart",
     "restart": "rimraf dist && yarn build && yarn start",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "format": "prettier --write \"**/*.{json,md,scss,yaml,yml,js}\""
   },
   "dependencies": {
     "bcrypt": "^3.0.2",
